@@ -163,7 +163,7 @@ public class TuMangaOnline extends ServerBase {
     public Navigator getNavWithNeededHeaders() {
         Navigator nav = getNavigatorAndFlushParameters();
         nav.addHeader("Cache-mode", "no-cache");
-        nav.addHeader("Referer", HOST + "/library/");
+        nav.addHeader("Referer", HOST + "/library/manga/");
         return nav;
     }
 
