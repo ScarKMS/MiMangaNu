@@ -18,7 +18,7 @@ import ar.rulosoft.navegadores.Navigator;
  */
 public class TuMangaOnline extends ServerBase {
 
-    private static final String HOST = "https://tmofans.com";
+    private static final String HOST = "https://lectortmo.com";
     public static String script = null;
     public JSServerHelper scriptHelper;
 
@@ -163,7 +163,7 @@ public class TuMangaOnline extends ServerBase {
     public Navigator getNavWithNeededHeaders() {
         Navigator nav = getNavigatorAndFlushParameters();
         nav.addHeader("Cache-mode", "no-cache");
-        nav.addHeader("Referer", HOST + "/library/manga/");
+        nav.addHeader("Referer", HOST + "/library/manga");
         return nav;
     }
 
